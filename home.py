@@ -3,6 +3,7 @@ from tkinter import *
 from tkinter import messagebox
 from tkinter import ttk
 import datetime as dt
+from turtle import back
 # from tkcalendar import DateEntry,Calender
 root=Tk()
 root.geometry("1860x900")
@@ -40,13 +41,12 @@ def func3():
     screen2.resizable(False, False)
     screen2.title('CONTRA REGISTER')
     screen2.geometry('1020x700')
-    
-    sbmibtn13 = Button(screen2, text='Cash',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=50)
-    sbmibtn14 = Button(screen2, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=70)
-    sbmibtn15 = Button(screen2, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=90)
-    sbmibtn16 = Button(screen2, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=700, y=110)
-    sbmibtn16 = Button(screen2, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=600, y=130)
-    sbmibtn16 = Button(screen2, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=750, y=130)
+    sbmibtn13 = Button(screen2, text='Cash',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=50)
+    sbmibtn14 = Button(screen2, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=70)
+    sbmibtn15 = Button(screen2, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=90)
+    sbmibtn16 = Button(screen2, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1030, y=110)
+    sbmibtn16 = Button(screen2, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1100, y=130)
+    sbmibtn16 = Button(screen2, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=950, y=130)
    
     sbmibtn = Button(screen2, text='APRIL',command=create1,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=170)
     sbmibtn2 = Button(screen2, text='MAY',command=create1,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=200)
@@ -67,8 +67,12 @@ def func3():
     date.place(x=8, y=25)
     company = Button(frame4, text="Company", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    back = Button(frame4, text="back", width=14, fg="black", font=(
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
     Label(screen2, text='CONTRA REGISTER',bg="lightblue",font='17',fg="black",width=430).pack() 
     Label(screen2, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
+
+    
     
 def func4():
     global screen2
@@ -76,14 +80,12 @@ def func4():
     screen2.resizable(False, False)
     screen2.title('payment register')
     screen2.geometry('1020x700')
-    
-    sbmibtn13 = Button(screen2, text='Cash',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=50)
-    sbmibtn14 = Button(screen2, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=70)
-    sbmibtn15 = Button(screen2, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=90)
-    sbmibtn16 = Button(screen2, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=700, y=110)
-    sbmibtn16 = Button(screen2, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=600, y=130)
-    sbmibtn16 = Button(screen2, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=750, y=130)
-   
+    sbmibtn13 = Button(screen2, text='Cash',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=50)
+    sbmibtn14 = Button(screen2, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=70)
+    sbmibtn15 = Button(screen2, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=90)
+    sbmibtn16 = Button(screen2, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1030, y=110)
+    sbmibtn16 = Button(screen2, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1100, y=130)
+    sbmibtn16 = Button(screen2, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=950, y=130)
     
     sbmibtn = Button(screen2, text='APRIL',command=create2,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=170)
     sbmibtn2 = Button(screen2, text='MAY',command=create2,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=200)
@@ -105,6 +107,8 @@ def func4():
     date.place(x=8, y=25)
     company = Button(frame5, text="Company", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    back = Button(frame5, text="back", width=14, fg="black", font=(
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
     Label(screen2, text='PAYMENT REGISTER',bg="lightblue",font='17',fg="black",width=430).pack()  
     Label(screen2, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
 def func5():
@@ -113,15 +117,13 @@ def func5():
     screen2.resizable(False, False)
     screen2.title('receipt register')
     screen2.geometry('1020x700')
-    
-    sbmibtn13 = Button(screen2, text='Cash',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=50)
-    sbmibtn14 = Button(screen2, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=70)
-    sbmibtn15 = Button(screen2, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=90)
-    sbmibtn16 = Button(screen2, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=700, y=110)
-    sbmibtn16 = Button(screen2, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=600, y=130)
-    sbmibtn16 = Button(screen2, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=750, y=130)
-   
-    
+    sbmibtn13 = Button(screen2, text='Cash',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=50)
+    sbmibtn14 = Button(screen2, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=70)
+    sbmibtn15 = Button(screen2, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=90)
+    sbmibtn16 = Button(screen2, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1030, y=110)
+    sbmibtn16 = Button(screen2, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1100, y=130)
+    sbmibtn16 = Button(screen2, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=950, y=130)
+
     sbmibtn = Button(screen2, text='APRIL',command=create3,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=170)
     sbmibtn2 = Button(screen2, text='MAY',command=create3,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=200)
     sbmibtn3 = Button(screen2, text='JUNE',command=create3,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=230)
@@ -141,6 +143,8 @@ def func5():
     date.place(x=8, y=25)
     company = Button(frame6, text="Company", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    back = Button(frame6, text="back", width=14, fg="black", font=(
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
     Label(screen2, text='RECEIPT REGISTER',bg="lightblue",font='17',fg="black",width=430).pack()  
     Label(screen2, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()    
 def func6():     
@@ -149,15 +153,14 @@ def func6():
     screen2.resizable(False, False)
     screen2.title('sales register')
     screen2.geometry('1020x700')
-    
-    sbmibtn13 = Button(screen2, text='Cash',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=50)
-    sbmibtn14 = Button(screen2, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=70)
-    sbmibtn15 = Button(screen2, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=90)
-    sbmibtn16 = Button(screen2, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=700, y=110)
-    sbmibtn16 = Button(screen2, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=600, y=130)
-    sbmibtn16 = Button(screen2, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=750, y=130)
-   
-    
+    sbmibtn13 = Button(screen2, text='Cash',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=50)
+    sbmibtn14 = Button(screen2, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=70)
+    sbmibtn15 = Button(screen2, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=90)
+    sbmibtn16 = Button(screen2, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1030, y=110)
+    sbmibtn16 = Button(screen2, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1100, y=130)
+    sbmibtn16 = Button(screen2, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=950, y=130)
+
+
     sbmibtn = Button(screen2, text='APRIL',command=create4,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=170)
     sbmibtn2 = Button(screen2, text='MAY',command=create4,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=200)
     sbmibtn3 = Button(screen2, text='JUNE',command=create4,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=230)
@@ -177,6 +180,8 @@ def func6():
     date.place(x=8, y=25)
     company = Button(frame7, text="Company", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    back = Button(frame7, text="back", width=14, fg="black", font=(
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
     Label(screen2, text='SALES REGISTER',bg="lightblue",font='17',fg="black",width=430).pack()  
     Label(screen2, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
 def func7():
@@ -185,15 +190,14 @@ def func7():
     screen2.resizable(False, False)
     screen2.title('purchase register')
     screen2.geometry('1020x700')
-    
-    sbmibtn13 = Button(screen2, text='Cash',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=50)
-    sbmibtn14 = Button(screen2, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=70)
-    sbmibtn15 = Button(screen2, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=90)
-    sbmibtn16 = Button(screen2, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=700, y=110)
-    sbmibtn16 = Button(screen2, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=600, y=130)
-    sbmibtn16 = Button(screen2, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=750, y=130)
-   
-    
+    sbmibtn13 = Button(screen2, text='Cash',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=50)
+    sbmibtn14 = Button(screen2, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=70)
+    sbmibtn15 = Button(screen2, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=90)
+    sbmibtn16 = Button(screen2, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1030, y=110)
+    sbmibtn16 = Button(screen2, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1100, y=130)
+    sbmibtn16 = Button(screen2, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=950, y=130)
+
+
     sbmibtn = Button(screen2, text='APRIL',command=create5,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=170)
     sbmibtn2 = Button(screen2, text='MAY',command=create5,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=200)
     sbmibtn3 = Button(screen2, text='JUNE',command=create5,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=230)
@@ -213,6 +217,8 @@ def func7():
     date.place(x=8, y=25)
     company = Button(frame8, text="Company", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    back = Button(frame8, text="back", width=14, fg="black", font=(
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
     Label(screen2, text='PURCHASE REGISTER',bg="lightblue",font='17',fg="black",width=430).pack()  
     Label(screen2, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
 def func8():
@@ -221,15 +227,13 @@ def func8():
     screen2.resizable(False, False)
     screen2.title('journal register')
     screen2.geometry('1020x700')
-    
-    sbmibtn13 = Button(screen2, text='Cash',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=50)
-    sbmibtn14 = Button(screen2, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=70)
-    sbmibtn15 = Button(screen2, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=90)
-    sbmibtn16 = Button(screen2, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=700, y=110)
-    sbmibtn16 = Button(screen2, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=600, y=130)
-    sbmibtn16 = Button(screen2, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=750, y=130)
-   
-    
+    sbmibtn13 = Button(screen2, text='Cash',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=50)
+    sbmibtn14 = Button(screen2, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=70)
+    sbmibtn15 = Button(screen2, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=90)
+    sbmibtn16 = Button(screen2, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1030, y=110)
+    sbmibtn16 = Button(screen2, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1100, y=130)
+    sbmibtn16 = Button(screen2, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=950, y=130)
+
     sbmibtn = Button(screen2, text='APRIL',command=create6,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=170)
     sbmibtn2 = Button(screen2, text='MAY',command=create6,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=200)
     sbmibtn3 = Button(screen2, text='JUNE',command=create6,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=230)
@@ -249,6 +253,8 @@ def func8():
     date.place(x=8, y=25)
     company = Button(frame9, text="Company", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    back = Button(frame9, text="back", width=14, fg="black", font=(
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
     Label(screen2, text='JOURNAL REGISTER',bg="lightblue",font='17',fg="black",width=430).pack()  
     Label(screen2, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()    
 def func9():
@@ -257,15 +263,14 @@ def func9():
     screen2.resizable(False, False)
     screen2.title('debit note register')
     screen2.geometry('1020x700')
-    
-    sbmibtn13 = Button(screen2, text='Cash',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=50)
-    sbmibtn14 = Button(screen2, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=70)
-    sbmibtn15 = Button(screen2, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=90)
-    sbmibtn16 = Button(screen2, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=700, y=110)
-    sbmibtn16 = Button(screen2, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=600, y=130)
-    sbmibtn16 = Button(screen2, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=750, y=130)
-   
-    
+    sbmibtn13 = Button(screen2, text='Cash',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=50)
+    sbmibtn14 = Button(screen2, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=70)
+    sbmibtn15 = Button(screen2, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=90)
+    sbmibtn16 = Button(screen2, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1030, y=110)
+    sbmibtn16 = Button(screen2, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1100, y=130)
+    sbmibtn16 = Button(screen2, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=950, y=130)
+
+
     sbmibtn = Button(screen2, text='APRIL',command=create7,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=170)
     sbmibtn2 = Button(screen2, text='MAY',command=create7,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=200)
     sbmibtn3 = Button(screen2, text='JUNE',command=create7,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=230)
@@ -285,6 +290,8 @@ def func9():
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    back = Button(frame10, text="back", width=14, fg="black", font=(
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
     Label(screen2, text='DEBIT NOTE REGISTER',bg="lightblue",font='17',fg="black",width=430).pack()  
     Label(screen2, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
 def func10():
@@ -293,15 +300,14 @@ def func10():
     screen2.resizable(False, False)
     screen2.title('credit note register')
     screen2.geometry('1020x700')
-    
-    sbmibtn13 = Button(screen2, text='Cash',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=50)
-    sbmibtn14 = Button(screen2, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=70)
-    sbmibtn15 = Button(screen2, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=90)
-    sbmibtn16 = Button(screen2, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=700, y=110)
-    sbmibtn16 = Button(screen2, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=600, y=130)
-    sbmibtn16 = Button(screen2, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=750, y=130)
-   
-    
+    sbmibtn13 = Button(screen2, text='Cash',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=50)
+    sbmibtn14 = Button(screen2, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=70)
+    sbmibtn15 = Button(screen2, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=90)
+    sbmibtn16 = Button(screen2, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1030, y=110)
+    sbmibtn16 = Button(screen2, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1100, y=130)
+    sbmibtn16 = Button(screen2, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=950, y=130)
+
+
     sbmibtn = Button(screen2, text='APRIL',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=170)
     sbmibtn2 = Button(screen2, text='MAY',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=200)
     sbmibtn3 = Button(screen2, text='JUNE',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(y=230)
@@ -321,6 +327,8 @@ def func10():
     date.place(x=8, y=25)
     company = Button(frame11, text="Company", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    back = Button(frame11, text="back", width=14, fg="black", font=(
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
     Label(screen2, text='CREDIT NOTE REGISTER',bg="lightblue",font='17',fg="black",width=430).pack()  
     Label(screen2, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()      
 def func11():
@@ -328,14 +336,23 @@ def func11():
     screen2 = Toplevel(root)
     screen2.resizable(False, False)
     screen2.title('CASH / BANK SUMMARY')
-    screen2.geometry('1020x700')  
+    screen2.geometry('1020x700') 
+    sbmibtn13 = Button(screen2, text='Cash',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=50)
+    sbmibtn14 = Button(screen2, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=70)
+    sbmibtn15 = Button(screen2, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1200, y=90)
+    sbmibtn16 = Button(screen2, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1030, y=110)
+    sbmibtn16 = Button(screen2, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=1100, y=130)
+    sbmibtn16 = Button(screen2, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=950, y=130)
+ 
     frame12 = Frame(screen2, bg="lightblue", width=180, height=790)
     frame12.place(x=1400, y=0)
     date = Button(frame12, text="Date", width=14, fg="black", font=(
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame12, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)  
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60) 
+    back = Button(frame12, text="back", width=14, fg="black", font=(
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen2, text='CASH/BANK SUMMARY',bg="lightblue",font='17',fg="black",width=430).pack()  
     Label(screen2, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
 
@@ -346,45 +363,42 @@ def func12():
     screen2.title('LEDGER')
     screen2.geometry('1020x700')
     frame131 = Frame(screen2, bg="lightblue", width=250, height=600)
-    frame131.place(x=650, y=10)
-    frame131 = Label(screen2, text="LIST OF LEDGERS",bg="Grey",fg="white",width=32,padx=10,pady=10).place(x=650, y=20)
-
+    frame131.place(x=650, y=0)
+    frame131 = Label(screen2, text="LIST OF LEDGERS",bg="black",fg="white",width=32,padx=10,pady=10).place(x=650, y=20)
     frame13 = Frame(screen2, bg="lightblue", width=180, height=790)
     frame13.place(x=1400, y=0)
     date = Button(frame13, text="Date", width=14, fg="black", font=(
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
-    separator = ttk.Separator(screen2,orient='vertical')
-    separator.place(relx=0.20,rely=0,relwidth=0.2,relheight=1)
     company = Button(frame13, text="Company", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    back = Button(frame13, text="back", width=14, fg="black", font=(
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
+    sbmibtn = Button(screen2, text='Create',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=170)
+    sbmibtn = Button(screen2, text='Cash',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=200)
+    sbmibtn = Button(screen2, text='Profit & loss A/C',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=220)
     e11 = Entry(screen2,).place(x=710, y=100)
-    date = Button(frame13, text="Date", width=14, fg="black", font=("timesnewroman",9), activebackground="palegreen", activeforeground="red")
-    date.place(x=20, y=25)
     Label(screen2, text='LEDGER',bg="lightblue",font='17',fg="black",width=430).pack() 
+    
 def func13():
     global screen2
     screen2 = Toplevel(root)
     screen2.resizable(False, False)
-    screen2.title('Group')
-    screen2.geometry('1020x700')
-    frame131 = Frame(screen2, bg="lightblue", width=250, height=600)
-    frame131.place(x=650, y=10)
-    frame131 = Label(screen2, text="GROUP SUMMARY",bg="Grey",fg="white",width=32,padx=10,pady=10).place(x=650, y=20)
-
-    frame13 = Frame(screen2, bg="lightblue", width=180, height=790)
-    frame13.place(x=1400, y=0)
-    date = Button(frame13, text="Date", width=14, fg="black", font=(
+    screen2.title('GROUP SUMMARY')
+    screen2.geometry('1020x700') 
+    frame141 = Frame(screen2, bg="lightblue", width=250, height=600)
+    frame141.place(x=650, y=0)
+    frame141 = Label(screen2, text="LIST OF GROUPS",bg="black",fg="white",width=32,padx=10,pady=10).place(x=650, y=20)   
+    frame14 = Frame(screen2, bg="lightblue", width=180, height=790)
+    frame14.place(x=1400, y=0)
+    date = Button(frame14, text="Date", width=14, fg="black", font=(
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
-    separator = ttk.Separator(screen2,orient='vertical')
-    separator.place(relx=0.20,rely=0,relwidth=0.2,relheight=1)
-    company = Button(frame13, text="Company", width=14, fg="black", font=(
+    company = Button(frame14, text="Company", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
-    e11 = Entry(screen2,).place(x=710, y=100)
-    date = Button(frame13, text="Date", width=14, fg="black", font=("timesnewroman",9), activebackground="palegreen", activeforeground="red")
-    date.place(x=20, y=25)
-    Label(screen2, text='Summary',bg="lightblue",font='17',fg="black",width=430).pack() 
+    back = Button(frame14, text="back", width=14, fg="black", font=(
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
+    Label(screen2, text='GROUP SUMMARY',bg="lightblue",font='17',fg="black",width=430).pack()    
 def func14():
     global screen2
     screen2 = Toplevel(root)
@@ -395,14 +409,16 @@ def func14():
     separator.place(relx=0.47,rely=0,relwidth=0.2,relheight=1) 
     frame151 = Frame(screen2, bg="lightblue", width=250, height=600)
     frame151.place(x=650, y=0)
-    frame151 = Label(screen2, text="LIST OF GROUPS",bg="Grey",fg="white",width=32,padx=10,pady=10).place(x=650, y=20)
+    frame151 = Label(screen2, text="LIST OF GROUPS",bg="black",fg="white",width=32,padx=10,pady=10).place(x=650, y=20)
     frame15 = Frame(screen2, bg="lightblue", width=180, height=790)
     frame15.place(x=1400, y=0)
     date = Button(frame15, text="Date", width=14, fg="black", font=(
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame15, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)  
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    back = Button(frame15, text="back", width=14, fg="black", font=(
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)  
     Label(screen2, text='GROUP VOUCHER',bg="lightblue",font='17',fg="black",width=430).pack()   
 def func15():
     global screen2
@@ -462,12 +478,13 @@ date = Button(frame3, text="Date", width=14, fg="black", font=(
 date.place(x=13, y=20)
 
 
+
 def func2():
     global screen2
     screen2 = Toplevel(root)
     screen2.resizable(False, False)
     screen2.title('Company')
-    screen2.geometry('700x430')
+    screen2.geometry('1020x700')
     Label(screen2, text='List Of Companies',bg="lightblue",font='17',fg="white",width=430).pack()
     sbmibtn = Button(screen2, text='Create Company',command=create,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=650,y=40)
     sbmibtn2 = Button(screen2, text='Alter Company',command=create,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=650,y=70)
@@ -562,12 +579,14 @@ def create8():
     screen3 = Toplevel(root)
     screen3.resizable(False, False)
     screen3.title('VOUCHER REGISTER')
-    screen3.geometry('1020x700 ')
+    screen3.geometry('1020x700')
     Label(screen3, text='LIST OF ALL CREDIT NOTE VOUCHERS',bg="lightblue",font='15',fg="BLACK",width=640).pack()           
        
     
 company = Button(frame3, text="Company", width=14, fg="black", font=(
     "timesnewroman", 9), command=func2, activebackground="palegreen", activeforeground="red").place(x=13, y=50)
+back = Button(frame3, text="back", width=14, fg="black", font=(
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=750)    
 root.mainloop()
 
 
