@@ -423,8 +423,8 @@ def func13():
     sbmibtn = Button(screen2, text='Loans and Advances(Assets)',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=625)
     sbmibtn = Button(screen2, text='Loans (Liability)',command=create9,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=650)
     sbmibtn = Button(screen2, text='Misc. Expenses(ASSET)',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=675)
-  
     Label(screen2, text='GROUP SUMMARY',bg="lightblue",font='17',fg="black",width=430).pack()    
+    
 def func14():
     global screen2
     screen2 = Toplevel(root)
