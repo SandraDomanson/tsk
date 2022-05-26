@@ -505,6 +505,30 @@ def func15():
     Label(screen3, text='PAYMENT REGISTER',bg="lightblue",font='17',fg="black",width=430).pack()  
     Label(screen3, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
     
+def func15():
+    global screen3
+    screen3 = Toplevel(root)
+    screen3.resizable(False, False)
+    screen3.title('payment register')
+    screen3.geometry('1020x700')
+    sbmibtn13 = Button(screen3, text='Cash',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=50)
+    sbmibtn14 = Button(screen3, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=70)
+    sbmibtn15 = Button(screen3, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=90)
+    sbmibtn16 = Button(screen3, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=700, y=110)
+    sbmibtn16 = Button(screen3, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=600, y=130)
+    sbmibtn16 = Button(screen3, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=750, y=130)
+    
+    frame5 = Frame(screen3, bg="lightblue", width=180, height=790)
+    frame5.place(x=1400, y=0)
+    date = Button(frame5, text="Date", width=14, fg="black", font=(
+    "timesnewroman",9), activebackground="palegreen", activeforeground="red")
+    date.place(x=8, y=25)
+    company = Button(frame5, text="Company", width=14, fg="black", font=(
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    back = Button(frame5, text="back", width=14, fg="black", font=(
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
+    Label(screen3, text='PAYMENT REGISTER',bg="lightblue",font='17',fg="black",width=430).pack()  
+    Label(screen3, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
     
 
 
