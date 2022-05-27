@@ -653,7 +653,31 @@ def create8():
     screen3.geometry('1020x700')
     Label(screen3, text='LIST OF ALL CREDIT NOTE VOUCHERS',bg="lightblue",font='15',fg="BLACK",width=640).pack()             
              
-
+def create9():
+    global screen4
+    screen4 = Toplevel(root)
+    screen4.resizable(False, False)
+    screen4.title('primary')
+    screen4.geometry('1020x700')
+    Label(screen4, text='Abc',bg="lightblue",font='15',fg="BLACK",width=640).pack() 
+    sbmibtn13 = Button(screen4, text='Cash',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=50)
+    sbmibtn14 = Button(screen4, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=70)
+    sbmibtn15 = Button(screen4, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=90)
+    sbmibtn16 = Button(screen4, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=700, y=110)
+    sbmibtn16 = Button(screen4, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=600, y=130)
+    sbmibtn16 = Button(screen4, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=750, y=130)
+    frame10 = Frame(screen4, bg="lightblue", width=180, height=790)
+    frame10.place(x=1400, y=0)
+    date = Button(frame10, text="Date", width=14, fg="black", font=(
+    "timesnewroman",9), activebackground="palegreen", activeforeground="red")
+    date.place(x=8, y=25)
+    company = Button(frame10, text="Company", width=14, fg="black", font=(
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    back = Button(frame10, text="back", width=14, fg="black", font=(
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
+    Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()              
+      
+    
 company = Button(frame3, text="Company", width=14, fg="black", font=(
     "timesnewroman", 9), command=func2, activebackground="palegreen", activeforeground="red").place(x=13, y=50)
 back = Button(frame3, text="Back", width=14, fg="black", font=(
