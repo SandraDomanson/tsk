@@ -452,30 +452,30 @@ def func14():
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame15, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)  
-    sbmibtn = Button(screen2, text='Primary',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=100)
-    sbmibtn = Button(screen2, text='Bank Accounts',command=create9,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=125)
-    sbmibtn = Button(screen2, text='Bank OCC A/c',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=150)
-    sbmibtn = Button(screen2, text='Bank OD A/c',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=175)
-    sbmibtn = Button(screen2, text='Branch /Divisions',command=create9,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=200)
-    sbmibtn = Button(screen2, text='Capital Account',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=225)
-    sbmibtn = Button(screen2, text='Cash in Hand ',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=250)
-    sbmibtn = Button(screen2, text='Current Assets',command=create9,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=275)
-    sbmibtn = Button(screen2, text='Current Liabilities',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=300)
-    sbmibtn = Button(screen2, text='Deposits (Assets)',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=325)
-    sbmibtn = Button(screen2, text='Direct Expenses',command=create9,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=350)
-    sbmibtn = Button(screen2, text='Direct Incomes',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=375)
-    sbmibtn = Button(screen2, text='Duties and Taxes',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=400)
-    sbmibtn = Button(screen2, text='Expenses(Direct)',command=create9,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=425)
-    sbmibtn = Button(screen2, text='Expenses(Indirect)',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=450)
-    sbmibtn = Button(screen2, text='Fixed Assets',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=475)
-    sbmibtn = Button(screen2, text='Income(Direct)',command=create9,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=500)
-    sbmibtn = Button(screen2, text='Income (Indirect)',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=525)
-    sbmibtn = Button(screen2, text='Indirect Expenses',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=550)
-    sbmibtn = Button(screen2, text='Indirect Incomes',command=create9,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=575)
-    sbmibtn = Button(screen2, text='Investments',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=600)
-    sbmibtn = Button(screen2, text='Loans and Advances(Assets)',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=625)
-    sbmibtn = Button(screen2, text='Loans (Liability)',command=create9,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=650)
-    sbmibtn = Button(screen2, text='Misc. Expenses(ASSET)',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=675)
+    sbmibtn = Button(screen2, text='Primary',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=100)
+    sbmibtn = Button(screen2, text='Bank Accounts',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=125)
+    sbmibtn = Button(screen2, text='Bank OCC A/c',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=150)
+    sbmibtn = Button(screen2, text='Bank OD A/c',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=175)
+    sbmibtn = Button(screen2, text='Branch /Divisions',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=200)
+    sbmibtn = Button(screen2, text='Capital Account',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=225)
+    sbmibtn = Button(screen2, text='Cash in Hand ',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=250)
+    sbmibtn = Button(screen2, text='Current Assets',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=275)
+    sbmibtn = Button(screen2, text='Current Liabilities',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=300)
+    sbmibtn = Button(screen2, text='Deposits (Assets)',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=325)
+    sbmibtn = Button(screen2, text='Direct Expenses',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=350)
+    sbmibtn = Button(screen2, text='Direct Incomes',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=375)
+    sbmibtn = Button(screen2, text='Duties and Taxes',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=400)
+    sbmibtn = Button(screen2, text='Expenses(Direct)',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=425)
+    sbmibtn = Button(screen2, text='Expenses(Indirect)',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=450)
+    sbmibtn = Button(screen2, text='Fixed Assets',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=475)
+    sbmibtn = Button(screen2, text='Income(Direct)',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=500)
+    sbmibtn = Button(screen2, text='Income (Indirect)',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=525)
+    sbmibtn = Button(screen2, text='Indirect Expenses',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=550)
+    sbmibtn = Button(screen2, text='Indirect Incomes',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=575)
+    sbmibtn = Button(screen2, text='Investments',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=600)
+    sbmibtn = Button(screen2, text='Loans and Advances(Assets)',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=625)
+    sbmibtn = Button(screen2, text='Loans (Liability)',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=650)
+    sbmibtn = Button(screen2, text='Misc. Expenses(ASSET)',command=create10,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=675)
     Label(screen2, text='GROUP VOUCHER',bg="lightblue",font='17',fg="black",width=430).pack()   
     
 
@@ -676,6 +676,33 @@ def create9():
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()              
+      
+      
+
+def create10():
+    global screen4
+    screen4 = Toplevel(root)
+    screen4.resizable(False, False)
+    screen4.title('primary')
+    screen4.geometry('1020x700')
+    Label(screen4, text='Abc',bg="lightblue",font='15',fg="BLACK",width=640).pack() 
+    sbmibtn13 = Button(screen4, text='Cash',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=50)
+    sbmibtn14 = Button(screen4, text='Abc Pvt Ltd',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=70)
+    sbmibtn15 = Button(screen4, text='For 1-April-22',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=800, y=90)
+    sbmibtn16 = Button(screen4, text='Transactions',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=700, y=110)
+    sbmibtn16 = Button(screen4, text='Credit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=600, y=130)
+    sbmibtn16 = Button(screen4, text='Debit',fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=750, y=130)
+    frame10 = Frame(screen4, bg="lightblue", width=180, height=790)
+    frame10.place(x=1400, y=0)
+    date = Button(frame10, text="Date", width=14, fg="black", font=(
+    "timesnewroman",9), activebackground="palegreen", activeforeground="red")
+    date.place(x=8, y=25)
+    company = Button(frame10, text="Company", width=14, fg="black", font=(
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    back = Button(frame10, text="back", width=14, fg="black", font=(
+    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
+    Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()              
+
       
     
 company = Button(frame3, text="Company", width=14, fg="black", font=(
