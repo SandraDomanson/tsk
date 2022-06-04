@@ -62,11 +62,10 @@ def func3():
     sbmibtn12 = Button(screen2, text='MARCH', command=create68, fg='black',font=('Arial',9),activebackground='palegreen', width=30, border=0).place(y=500)
     frame4 = Frame(screen2, bg="lightblue", width=180, height=790)
     frame4.place(x=1400, y=0)
-    date = Button(frame4, text="Date", width=14, fg="black", font=(
-    "timesnewroman",9), activebackground="palegreen", activeforeground="red")
+    date = Button(frame4, text="Date", width=14, fg="black", font=("timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame4, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame4, command=create, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
     Label(screen2, text='CONTRA REGISTER',bg="lightblue",font='17',fg="black",width=430).pack() 
@@ -106,7 +105,7 @@ def func4():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame5, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame5, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
     Label(screen2, text='PAYMENT REGISTER',bg="lightblue",font='17',fg="black",width=430).pack()  
@@ -142,7 +141,7 @@ def func5():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame6, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame6, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
     Label(screen2, text='RECEIPT REGISTER',bg="lightblue",font='17',fg="black",width=430).pack()  
@@ -179,7 +178,7 @@ def func6():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame7, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame7, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
     Label(screen2, text='SALES REGISTER',bg="lightblue",font='17',fg="black",width=430).pack()  
@@ -216,7 +215,7 @@ def func7():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame8, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame8, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
     Label(screen2, text='PURCHASE REGISTER',bg="lightblue",font='17',fg="black",width=430).pack()  
@@ -252,7 +251,7 @@ def func8():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame9, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame9, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
     Label(screen2, text='JOURNAL REGISTER',bg="lightblue",font='17',fg="black",width=430).pack()  
@@ -289,7 +288,7 @@ def func9():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
     Label(screen2, text='DEBIT NOTE REGISTER',bg="lightblue",font='17',fg="black",width=430).pack()  
@@ -326,7 +325,7 @@ def func10():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame11, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame11, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
     Label(screen2, text='CREDIT NOTE REGISTER',bg="lightblue",font='17',fg="black",width=430).pack()  
@@ -350,7 +349,7 @@ def func11():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame12, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60) 
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60) 
     back = Button(frame12, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen2, text='CASH/BANK SUMMARY',bg="lightblue",font='17',fg="black",width=430).pack()  
@@ -371,7 +370,7 @@ def func12():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame13, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame13, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
     sbmibtn = Button(screen2, text='Create',command=create8,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=170)
@@ -397,7 +396,7 @@ def func13():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame14, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame14, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)
 
@@ -442,7 +441,7 @@ def func14():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame15, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame15, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700)  
     sbmibtn = Button(screen2, text='Primary',command=create33,fg='black',font=('Arial',9),activebackground='palegreen',width=30,border=0).place(x=665,y=100)
@@ -484,47 +483,37 @@ def func15():
     b1311 = Button(screen2, text="NO", fg="black", activebackground="palegreen",
              bg="white", width=20, height=1, command=func15).place(x=697, y=240)     
 
-
-
-
 b1 = Button(root, text="Cash/Bank Book(s)", fg="black", activebackground="palegreen",
-            bg="white", width=20, height=1, command=func11).place(x=830, y=230)
-
+            bg="white", width=20, height=1, command=func11).place(x=720, y=160)
 b2 = Button(root, text="Ledger", fg="black", activebackground="palegreen",
-            bg="white", width=20, height=1, command=func12).place(x=830, y=260)
+            bg="white", width=20, height=1, command=func12).place(x=720, y=190)
 b3 = Button(root, text="Group summary", fg="black", activebackground="palegreen",
-            bg="white", width=20, height=1, command=func13).place(x=830, y=290)
+            bg="white", width=20, height=1, command=func13).place(x=720, y=235)
 b4 = Button(root, text="Group Vouchers",fg="black", activebackground="palegreen",
-            bg="white", width=20, height=1, command=func14).place(x=830, y=320)
-mstrs1 = Label(root, text="Registers",bg="lightblue",fg="black",font="13").place(x=850,y=355)
-
+            bg="white", width=20, height=1, command=func14).place(x=720, y=265)
+mstrs1 = Label(root, text="Registers",bg="lightblue",fg="black",font="13").place(x=750,y=295)
 b6 = Button(root, text="ConTra Register", fg="black", activebackground="palegreen",
-            bg="white", width=20, height=1, command=func3).place(x=830, y=390)
+            bg="white", width=20, height=1, command=func3).place(x=720, y=330)
 b7 = Button(root, text="Payment Register", fg="black", activebackground="palegreen",
-            bg="white", width=20, height=1, command=func4).place(x=830, y=420)
-
-
+            bg="white", width=20, height=1, command=func4).place(x=720, y=360)
 b8 = Button(root, text="Reciept Register", fg="black", activebackground="palegreen",
-            bg="white", width=20, height=1, command=func5).place(x=830, y=450)
+            bg="white", width=20, height=1, command=func5).place(x=720, y=390)
 b9 = Button(root, text="Sales Register", fg="black", activebackground="palegreen",
-            bg="white", width=20, height=1, command=func6).place(x=830, y=500)
+            bg="white", width=20, height=1, command=func6).place(x=720, y=435)
 b10 = Button(root, text="Purchase Register", fg="black", activebackground="palegreen",
-            bg="white", width=20, height=1, command=func7).place(x=830, y=530)
-
+            bg="white", width=20, height=1, command=func7).place(x=720, y=465)
 b10 = Button(root, text="Journal Register", fg="black", activebackground="palegreen",
-            bg="white", width=20, height=1, command=func8).place(x=830, y=580)
+            bg="white", width=20, height=1, command=func8).place(x=720, y=510)
 b11 = Button(root, text="Debit Note Register", fg="black", activebackground="palegreen",
-             bg="white", width=20, height=1, command=func9).place(x=830, y=610)
-
+             bg="white", width=20, height=1, command=func9).place(x=720, y=540)
 b12 = Button(root, text="Credit Note Register", fg="black", activebackground="palegreen",
-             bg="white", width=20, height=1, command=func10).place(x=830, y=640)
-
+             bg="white", width=20, height=1, command=func10).place(x=720, y=570)
              
 b13 = Button(root, text="Quit", fg="black", activebackground="palegreen",
-             bg="white", width=20, height=1, command=func15).place(x=830, y=670)           
+             bg="white", width=20, height=1, command=func1).place(x=720, y=610)
              
 frame3 = Frame(root, bg="lightblue", width=140, height=790)
-frame3.place(x=1400, y=0)
+frame3.place(x=1100, y=0)
 date = Button(frame3, text="Date", width=14, fg="black", font=(
     "timesnewroman",9), command=func1, activebackground="palegreen", activeforeground="red")
 date.place(x=13, y=20)
@@ -653,7 +642,7 @@ def create9():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -677,7 +666,7 @@ def create10():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()  
@@ -701,7 +690,7 @@ def create11():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()  
@@ -725,7 +714,7 @@ def create12():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()  
@@ -749,7 +738,7 @@ def create13():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -773,7 +762,7 @@ def create14():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -797,7 +786,7 @@ def create15():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -821,7 +810,7 @@ def create16():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()  
@@ -845,7 +834,7 @@ def create17():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -869,7 +858,7 @@ def create18():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -893,7 +882,7 @@ def create19():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -917,7 +906,7 @@ def create20():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -941,7 +930,7 @@ def create21():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -965,7 +954,7 @@ def create22():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -989,7 +978,7 @@ def create23():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()  
@@ -1013,7 +1002,7 @@ def create24():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1037,7 +1026,7 @@ def create25():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1061,7 +1050,7 @@ def create26():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1085,7 +1074,7 @@ def create27():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1109,7 +1098,7 @@ def create28():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1133,7 +1122,7 @@ def create29():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1157,7 +1146,7 @@ def create30():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1181,7 +1170,7 @@ def create31():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -1205,7 +1194,7 @@ def create32():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1229,7 +1218,7 @@ def create33():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1253,7 +1242,7 @@ def create34():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1277,7 +1266,7 @@ def create35():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1301,7 +1290,7 @@ def create36():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1325,7 +1314,7 @@ def create37():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1349,7 +1338,7 @@ def create38():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -1373,7 +1362,7 @@ def create39():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -1397,7 +1386,7 @@ def create40():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()  
@@ -1421,7 +1410,7 @@ def create41():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1445,7 +1434,7 @@ def create42():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -1469,7 +1458,7 @@ def create43():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -1493,7 +1482,7 @@ def create44():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -1517,7 +1506,7 @@ def create45():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1541,7 +1530,7 @@ def create46():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -1565,7 +1554,7 @@ def create47():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1589,7 +1578,7 @@ def create48():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1613,7 +1602,7 @@ def create49():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1637,7 +1626,7 @@ def create50():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1661,7 +1650,7 @@ def create51():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -1685,7 +1674,7 @@ def create52():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1709,7 +1698,7 @@ def create53():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -1733,7 +1722,7 @@ def create54():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()  
@@ -1757,7 +1746,7 @@ def create55():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1781,7 +1770,7 @@ def create56():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1804,7 +1793,7 @@ def create57():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()  
@@ -1828,7 +1817,7 @@ def create58():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1852,7 +1841,7 @@ def create59():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1876,7 +1865,7 @@ def create60():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -1900,7 +1889,7 @@ def create61():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -1924,7 +1913,7 @@ def create62():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1948,7 +1937,7 @@ def create63():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -1972,7 +1961,7 @@ def create64():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -1996,7 +1985,7 @@ def create65():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2020,7 +2009,7 @@ def create66():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()  
@@ -2044,7 +2033,7 @@ def create67():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()      
@@ -2067,7 +2056,7 @@ def create68():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()                 
@@ -2090,7 +2079,7 @@ def create69():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()  
@@ -2114,7 +2103,7 @@ def create70():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2138,7 +2127,7 @@ def create71():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2162,7 +2151,7 @@ def create72():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2186,7 +2175,7 @@ def create73():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2210,7 +2199,7 @@ def create74():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2234,7 +2223,7 @@ def create75():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2258,7 +2247,7 @@ def create76():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()  
@@ -2282,7 +2271,7 @@ def create77():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2306,7 +2295,7 @@ def create78():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()  
@@ -2330,7 +2319,7 @@ def create79():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()  
@@ -2353,7 +2342,7 @@ def create80():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()                 
@@ -2376,7 +2365,7 @@ def create81():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2399,7 +2388,7 @@ def create82():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()  
@@ -2423,7 +2412,7 @@ def create83():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2447,7 +2436,7 @@ def create84():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2470,7 +2459,7 @@ def create85():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2494,7 +2483,7 @@ def create86():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2518,7 +2507,7 @@ def create87():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2542,7 +2531,7 @@ def create88():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2566,7 +2555,7 @@ def create89():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2590,7 +2579,7 @@ def create90():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -2614,7 +2603,7 @@ def create91():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()    
@@ -2637,7 +2626,7 @@ def create92():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()         
@@ -2660,7 +2649,7 @@ def create93():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2684,7 +2673,7 @@ def create94():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2707,7 +2696,7 @@ def create95():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2731,7 +2720,7 @@ def create96():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2755,7 +2744,7 @@ def create97():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()  
@@ -2779,7 +2768,7 @@ def create98():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()  
@@ -2803,7 +2792,7 @@ def create99():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2827,7 +2816,7 @@ def create100():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2851,7 +2840,7 @@ def create101():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()  
@@ -2875,7 +2864,7 @@ def create102():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2899,7 +2888,7 @@ def create103():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()     
@@ -2922,7 +2911,7 @@ def create104():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()               
@@ -2945,7 +2934,7 @@ def create105():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2968,7 +2957,7 @@ def create106():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -2991,7 +2980,7 @@ def create107():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3014,7 +3003,7 @@ def create108():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3038,7 +3027,7 @@ def create109():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3062,7 +3051,7 @@ def create110():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3086,7 +3075,7 @@ def create111():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3110,7 +3099,7 @@ def create112():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3134,7 +3123,7 @@ def create113():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3158,7 +3147,7 @@ def create114():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -3182,7 +3171,7 @@ def create115():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()    
@@ -3205,7 +3194,7 @@ def create116():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()             
@@ -3228,7 +3217,7 @@ def create117():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3252,7 +3241,7 @@ def create118():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -3276,7 +3265,7 @@ def create119():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3300,7 +3289,7 @@ def create120():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3324,7 +3313,7 @@ def create121():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3348,7 +3337,7 @@ def create122():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3372,7 +3361,7 @@ def create123():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3396,7 +3385,7 @@ def create124():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()()  
@@ -3420,7 +3409,7 @@ def create125():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3444,7 +3433,7 @@ def create126():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3468,7 +3457,7 @@ def create127():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()  
@@ -3491,7 +3480,7 @@ def create128():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3514,7 +3503,7 @@ def create129():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3537,7 +3526,7 @@ def create130():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3561,7 +3550,7 @@ def create131():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3585,7 +3574,7 @@ def create132():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -3609,7 +3598,7 @@ def create133():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -3633,7 +3622,7 @@ def create134():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3657,7 +3646,7 @@ def create135():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3681,7 +3670,7 @@ def create136():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3705,7 +3694,7 @@ def create137():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -3729,7 +3718,7 @@ def create138():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3753,7 +3742,7 @@ def create139():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9), command=func2,activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -3776,7 +3765,7 @@ def create140():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3799,7 +3788,7 @@ def create141():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3823,7 +3812,7 @@ def create142():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack() 
@@ -3847,7 +3836,7 @@ def create143():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3871,7 +3860,7 @@ def create144():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3895,7 +3884,7 @@ def create145():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3918,7 +3907,7 @@ def create146():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3942,7 +3931,7 @@ def create147():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3966,7 +3955,7 @@ def create148():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -3990,7 +3979,7 @@ def create149():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()  
@@ -4014,7 +4003,7 @@ def create150():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
@@ -4038,7 +4027,7 @@ def create151():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()     
@@ -4061,7 +4050,7 @@ def create152():
     "timesnewroman",9), activebackground="palegreen", activeforeground="red")
     date.place(x=8, y=25)
     company = Button(frame10, text="Company", width=14, fg="black", font=(
-    "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=60)
+    "timesnewroman", 9),command=func2, activebackground="palegreen", activeforeground="red").place(x=8, y=60)
     back = Button(frame10, text="back", width=14, fg="black", font=(
     "timesnewroman", 9), activebackground="palegreen", activeforeground="red").place(x=8, y=700) 
     Label(screen4, text='PARTICULAR').place(x=20, y=70)(font="timesnewroman").pack()
